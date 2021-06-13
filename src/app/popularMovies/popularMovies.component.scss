@@ -2,7 +2,7 @@
 h1 {
     text-align: center;
     color: white;
-    padding-top: 50px;
+    padding-top: 40px;
   }
 
   .popular-movies{
@@ -81,6 +81,7 @@ h1 {
         margin: 0;
         text-align: center;
       }
+
       img {
         min-width: 138px;
         width: 140px;
@@ -88,4 +89,18 @@ h1 {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
       }
-  
+
+      ::-webkit-scrollbar {
+        width: 25%;
+      }
+      ::-webkit-scrollbar-track {
+        background: white;
+        border-radius: 10px;
+        background-color: rgb(3, 37, 56);
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(9, 86, 131);
+        border-radius: 10px;
+      }
+    
