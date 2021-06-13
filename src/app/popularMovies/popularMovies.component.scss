@@ -1,0 +1,63 @@
+
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+  }
+
+  .popular-movies{
+    background-color: rgb(3, 37, 56);
+  }
+
+  .scroller {
+    height: 285px;
+    overflow-y: hidden;
+    overflow-x: auto !important;
+    display: flex;
+    padding: 10px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+  
+    .rating {
+      position: absolute;
+      top: 0;
+      color: white;
+      align-items: center;
+      display: flex;
+    }
+  
+    .title {
+      font-weight: bold;
+      padding-top: 5px;
+    }
+  
+    .scroll-item {
+      margin-right: 10px;
+      border-radius: 8px;
+      background: #042038 !important;
+      color: white;
+      max-width: 140px;
+      position: relative;
+      transition: all 0.5s;
+  
+      &:hover {
+        transform: translateY(-3px) scale(1.01);
+        z-index: 9;
+      }
+  
+      p {
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+      }
+      img {
+        min-width: 138px;
+        width: 140px;
+        height: 175px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+  }
+  

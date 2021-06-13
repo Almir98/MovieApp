@@ -24,5 +24,4 @@ export class PopularMoviesComponent implements OnInit {
       console.log(error);
     });
   }
-
 }
