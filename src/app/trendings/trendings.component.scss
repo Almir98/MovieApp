@@ -72,6 +72,50 @@ h1 {
       border-top-right-radius: 8px;
     }
     
+    .buttons{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .btn-today{
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        padding: 4px 5px;
+        background-color: rgb(3, 37, 56) !important;
+        color: white;
+        border:none;
+    }
+
+    .day-active{
+        border-radius: 15px;
+        background-color: rgb(15, 82, 121) !important;
+        color: white;
+        margin: auto;
+        border:none;
+        padding: 4px 5px;
+    }
+
+    .btn-week{
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        padding: 4px 5px;
+        background-color: rgb(3, 37, 56) !important;
+        color: white;
+        border:none;
+    }
+
+    .week-active{
+        border:none;
+        border-radius: 15px;
+        background-color: rgb(15, 82, 121) !important;
+        color: white;
+        margin: auto;
+        padding: 4px 5px;
+    }
+
     .vote-average p :hover{
       text-decoration: underline;
     }

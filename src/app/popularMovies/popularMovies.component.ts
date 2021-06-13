@@ -16,10 +16,9 @@ export class PopularMoviesComponent implements OnInit {
   }
 
   getPopularMovies(){
-    this.movieService.getPopularMovies('movie', 1).subscribe(response =>{
+    this.movieService.getPopular('movie', 1).subscribe(response =>{
 
       this.popularMovies = response;
-      console.log(this.popularMovies);
     }, error =>{
       console.log(error);
     });

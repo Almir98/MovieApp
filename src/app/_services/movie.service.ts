@@ -9,12 +9,8 @@ export class MovieService {
 
 constructor(private http: HttpClient) { }
 
-getPopularMovies(mediaType, page){
+getPopular(mediaType, page){
   return this.http.get(`${environment.tmdbAPIUrl}/${mediaType}/popular?api_key=${environment.tmbdAPIkey}&language=en-US&page=${page}`).pipe();
 }
-
-
-
-
 
 }

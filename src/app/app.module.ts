@@ -12,14 +12,19 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { PopularMoviesComponent } from './popularMovies/popularMovies.component';
 import { MovieService } from './_services/movie.service';
+import { TrendingService } from './_services/trending.service';
+import { PopularShowsComponent } from './popularShows/popularShows.component';
+import { TrendingsComponent } from './trendings/trendings.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [						
     AppComponent,
       HomeComponent,
       HeaderComponent,
       SearchComponent,
-      PopularMoviesComponent
+      PopularMoviesComponent,
+      PopularShowsComponent,
+      TrendingsComponent
    ],
   imports: [
     BrowserModule,
@@ -31,7 +36,8 @@ import { MovieService } from './_services/movie.service';
 
   ],
   providers: [
-    MovieService
+    MovieService,
+    TrendingService
   ],
   bootstrap: [AppComponent]
 })

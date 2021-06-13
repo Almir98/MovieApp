@@ -98,9 +98,11 @@ h1 {
         border-radius: 10px;
         background-color: rgb(3, 37, 56);
       }
-      
       ::-webkit-scrollbar-thumb {
         background-color: rgb(15, 82, 121);
         border-radius: 10px;
       }
     
+      .vote-average{
+          color: white;
+      }
