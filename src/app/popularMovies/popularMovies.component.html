@@ -5,10 +5,12 @@
     <a routerLink="/details/movie/{{trending.id}}" *ngIf="!trending.adult"
       class="scroll-item">
       <img src="https://image.tmdb.org/t/p/w1280{{trending.poster_path}}" *ngIf="trending.poster_path">
-      <p class="title">{{trending.title}}</p>
-      <p>{{trending.release_date | date}}</p>
+      <div class="item-text">
+        <p class="title">{{trending.title}}</p>
+        <p>{{trending.release_date | date}}</p>
+      </div>
       <div class="rating">
-        <svg style="width:26px;height:26px;" viewBox="0 0 24 24">
+        <svg id="star" style="width:26px;height:26px;" viewBox="0 0 24 24">
           <path fill="yellow"
             d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
         </svg>
