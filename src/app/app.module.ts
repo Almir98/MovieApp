@@ -9,12 +9,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { appRoutes } from './routes';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { SearchComponent } from './search/search.component';
+import { PopularMoviesComponent } from './popularMovies/popularMovies.component';
+import { MovieService } from './_services/movie.service';
 
 @NgModule({
-  declarations: [		
+  declarations: [				
     AppComponent,
       HomeComponent,
-      HeaderComponent
+      HeaderComponent,
+      SearchComponent,
+      PopularMoviesComponent
    ],
   imports: [
     BrowserModule,
@@ -25,7 +30,9 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule
 
   ],
-  providers: [],
+  providers: [
+    MovieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
