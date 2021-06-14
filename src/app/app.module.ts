@@ -15,16 +15,20 @@ import { MovieService } from './_services/movie.service';
 import { TrendingService } from './_services/trending.service';
 import { PopularShowsComponent } from './popularShows/popularShows.component';
 import { TrendingsComponent } from './trendings/trendings.component';
+import { MovieDetailsComponent } from './movieDetails/movieDetails.component';
+import { CastsComponent } from './casts/casts.component';
 
 @NgModule({
-  declarations: [						
+  declarations: [								
     AppComponent,
       HomeComponent,
       HeaderComponent,
       SearchComponent,
       PopularMoviesComponent,
       PopularShowsComponent,
-      TrendingsComponent
+      TrendingsComponent,
+      MovieDetailsComponent,
+      CastsComponent
    ],
   imports: [
     BrowserModule,

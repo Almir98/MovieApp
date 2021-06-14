@@ -1,0 +1,235 @@
+
+.movie-details-wrapper {
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  padding: 25px;
+
+  .main {
+    display: flex;
+    padding: 0 85px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 0;
+      text-align: center;
+    }
+
+    .poster-image {
+      width: auto;
+      height: 400px;
+
+      img {
+        height: 100%;
+        border-radius: 8px;
+      }
+    }
+
+    .scroller {
+      height: 320px;
+      overflow-y: hidden;
+      overflow-x: auto !important;
+      display: flex;  
+      padding: 10px;
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 20px;
+      min-width: 138px;
+    }
+    
+    .movie-info {
+      padding: 0 40px;
+      color: white;
+
+      .facts {
+        display: flex;
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        .certification {
+          display: inline-flex;
+          white-space: nowrap;
+          align-items: center;
+          align-content: center;
+          padding: 3px;
+          border: 1px solid white;
+          color: white;
+          line-height: 1;
+          border-radius: 2px;
+          margin-right: 7px;
+
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        .release {
+          margin-right: 7px;
+        }
+
+        .genres {
+          margin-right: 7px;
+
+          &::before {
+            content: "\2022";
+          }
+          &::after {
+            content: "\2022";
+          }
+        }
+      }
+
+      .play-trailer {
+        display: inline-flex;
+        align-items: center;
+        position: absolute;
+        top: 90px;
+        right: 10%;
+        cursor: pointer;
+
+        img {
+          height: 40px;
+          filter: invert(1);
+          background: #f5743a;
+          border-radius: 50%;
+          padding: 5px;
+          animation: shadowAnimation 1.5s infinite;
+        }
+      }
+
+      .movie-title {
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.5s;
+
+        &:hover {
+          color: #005296;
+        }
+      }
+
+      .company {
+        display: inline-block;
+
+        img {
+          height: 60px;
+          margin-right: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .rating-wrapper {
+        display: inline-block;
+        margin-left: 20px;
+
+        .rating {
+          display: flex;
+          align-items: center;
+
+          .vote-average {
+            font-size: 24px;
+
+            &.green {
+              color: lime;
+            }
+
+            &.orange {
+              color: orange;
+            }
+
+            &.red {
+              color: red;
+            }
+          }
+          svg {
+            fill: yellow;
+          }
+          .max,
+          .vote_count {
+            margin-right: 5px;
+            font-size: 13px;
+            color: #7a7b7f;
+            margin-top: 6px;
+          }
+
+          .vote_count {
+            color: #919295;
+          }
+        }
+      }
+
+      .keywords {
+        width: 65%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        li {
+          cursor: pointer;
+          display: inline-block;
+          padding: 8px 16px 10px 16px;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1;
+          text-transform: uppercase;
+          color: #fff;
+          margin-bottom: 10px;
+          transition: all 0.3s ease-in-out;
+          border-radius: 4px;
+          background: #09497b7a;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .overview {
+      width: 90%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  iframe {
+    width: 400px;
+    height: 225px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+  }
+}
+
+.scroller {
+  height: 320px;
+  overflow-y: hidden;
+  overflow-x: auto !important;
+  display: flex;  
+  padding: 10px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
+  min-width: 138px;
+}
+
+.scroll-item {
+  margin-right: 10px;
+  border-radius: 8px;
+  background: #042038 !important;
+  color: white;
+  max-width: 140px;
+  position: relative;
+  transition: all 0.5s;
+  text-decoration: none;
+  width: 140px;
+  height: 175px;
+  margin-left: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
