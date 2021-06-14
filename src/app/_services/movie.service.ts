@@ -35,5 +35,4 @@ getCast(movieId, mediaType){
   return this.http.get(`${environment.tmdbAPIUrl}/${mediaType}/${movieId}/credits?api_key=${environment.tmbdAPIkey}&adult=false&language=en-US`).pipe();
 }
 
-
 }

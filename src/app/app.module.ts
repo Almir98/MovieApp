@@ -17,9 +17,10 @@ import { PopularShowsComponent } from './popularShows/popularShows.component';
 import { TrendingsComponent } from './trendings/trendings.component';
 import { MovieDetailsComponent } from './movieDetails/movieDetails.component';
 import { CastsComponent } from './casts/casts.component';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [									
     AppComponent,
       HomeComponent,
       HeaderComponent,
@@ -28,7 +29,8 @@ import { CastsComponent } from './casts/casts.component';
       PopularShowsComponent,
       TrendingsComponent,
       MovieDetailsComponent,
-      CastsComponent
+      CastsComponent,
+      MoviesComponent
    ],
   imports: [
     BrowserModule,
