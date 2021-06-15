@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonService } from '../_services/person.service';
+import { SearchService } from '../_services/search.service';
 
 @Component({
   selector: 'app-people',
@@ -12,8 +13,9 @@ export class PeopleComponent implements OnInit {
   people: any;
   person:any;
   backgroundImage: string;
+  searchQuery = '';
 
-  constructor(private peopleService: PersonService) { }
+  constructor(private peopleService: PersonService, private searchService: SearchService) { }
 
   ngOnInit() {
     this.getAllCasts();
@@ -68,9 +70,26 @@ export class PeopleComponent implements OnInit {
     });
   }
 
-  search(string)
-  {
-    
+  getPopular(page) {
+    if(this.searchQuery == ''){
+      this.peopleService.getPopular(page).subscribe((responseData) => {
+        this.people = responseData;
+      });
+    }
+    else{
+      this.getPeopleBySearchQuery(this.searchQuery, page);
+    }
   }
 
+  getPeopleBySearchQuery(searchQuery, page) {
+    this.searchQuery = searchQuery;
+    this.currentPage = 1;
+
+    if(searchQuery == ''){
+      this.getPopular(this.currentPage);
+    }
+    else{
+      this.searchService.searchPeople(searchQuery, page).subscribe((responseData) => this.people = responseData);
+    }
+  }
 }

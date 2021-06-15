@@ -1,5 +1,5 @@
 <div class="input">
-  <input #searchBox id="search" (input)="search(searchBox.value)" class="search" placeholder="Search for an actor" />
+  <input #searchBox id="search" (input)="getPeopleBySearchQuery(searchBox.value, 1)" class="search" placeholder="Search for an actor" />
 </div>
 
 <main id="main" *ngIf="people">
