@@ -11,9 +11,4 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  search(searchWord: string)
-  {
-
-  }
 }

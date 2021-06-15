@@ -17,6 +17,10 @@ getPersonImages(personId){
   return this.http.get(`${environment.tmdbAPIUrl}/person/${personId}/images?api_key=${environment.tmbdAPIkey}&language=en-US&include_adult=false`).pipe();
 }
 
+getPersonsCombinedCredits(personId){
+  return this.http.get(`${environment.tmdbAPIUrl}/person/${personId}/combined_credits?api_key=${environment.tmbdAPIkey}&language=en-US&include_adult=false`).pipe();
+}
+
 getPopular(page){
   return this.http.get(`${environment.tmdbAPIUrl}/person/popular?api_key=${environment.tmbdAPIkey}&language=en-US&include_adult=false&page=${page}`).pipe();
 }

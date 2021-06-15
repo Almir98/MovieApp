@@ -1,3 +1,7 @@
+<div class="input">
+  <input #searchBox id="search" (input)="search(searchBox.value)" class="search" placeholder="Search for a TV show" />
+</div>
+
 <main id="main" *ngIf="movies">
 
   <ng-container *ngFor="let movie of movies.results">

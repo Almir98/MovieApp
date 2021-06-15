@@ -65,4 +65,9 @@ export class MoviesComponent implements OnInit {
       console.log(error);
     });
   }
+
+  search(string)
+  {
+
+  }
 }

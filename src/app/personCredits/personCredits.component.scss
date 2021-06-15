@@ -1,0 +1,41 @@
+.movies,
+.tv,
+.production,
+.directing,
+.crew {
+  margin-top: 50px;
+  max-height: 400px;
+  overflow-y: auto;
+
+  .adult {
+    p {
+      filter: blur(6px);
+      padding-left: 10px;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    color: white;
+    margin: 15px 0;
+    border-bottom: 1px solid #0d304d;
+    padding-bottom: 10px;
+
+    &:hover {
+      color: #1c72b9;
+    }
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+.scroller{
+  margin-left: 0;
+}
+hr {
+  border-color: #ffffff21;
+}

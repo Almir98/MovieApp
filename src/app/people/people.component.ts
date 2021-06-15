@@ -68,4 +68,9 @@ export class PeopleComponent implements OnInit {
     });
   }
 
+  search(string)
+  {
+    
+  }
+
 }

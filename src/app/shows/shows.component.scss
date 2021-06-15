@@ -10,6 +10,39 @@ main {
   
   }
   
+  .search {
+    background-color: transparent;
+    border: 2px solid #d6dadf2e;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    width: 40%;
+    transition: all 0.6s;
+  
+    &:not(:first-of-type) {
+      margin-left: 10px;
+    }
+  
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  
+    &:focus {
+      outline: none;
+      background-color: #03213a;
+      width: 55%;
+    }
+  }
+
+  .input{
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(3, 37, 56);
+  }
+
   .movie {
     width: 300px;
     margin: 1rem;
