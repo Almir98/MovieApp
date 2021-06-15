@@ -21,9 +21,10 @@ import { CastsComponent } from './casts/casts.component';
 import { MoviesComponent } from './movies/movies.component';
 import { ShowsComponent } from './shows/shows.component';
 import { PeopleComponent } from './people/people.component';
+import { PeopleDetailsComponent } from './peopleDetails/peopleDetails.component';
 
 @NgModule({
-  declarations: [											
+  declarations: [												
     AppComponent,
       HomeComponent,
       HeaderComponent,
@@ -35,7 +36,8 @@ import { PeopleComponent } from './people/people.component';
       CastsComponent,
       MoviesComponent,
       ShowsComponent,
-      PeopleComponent
+      PeopleComponent,
+      PeopleDetailsComponent
    ],
   imports: [
     BrowserModule,
