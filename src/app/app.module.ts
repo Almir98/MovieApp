@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { PopularMoviesComponent } from './popularMovies/popularMovies.component';
 import { MovieService } from './_services/movie.service';
 import { PersonService } from './_services/person.service';
+import { SearchService } from './_services/search.service';
 import { TrendingService } from './_services/trending.service';
 import { PopularShowsComponent } from './popularShows/popularShows.component';
 import { TrendingsComponent } from './trendings/trendings.component';
@@ -53,7 +54,8 @@ import { PersonCreditsComponent } from './personCredits/personCredits.component'
   providers: [
     MovieService,
     TrendingService,
-    PersonService
+    PersonService,
+    SearchService
   ],
   bootstrap: [AppComponent]
 })
