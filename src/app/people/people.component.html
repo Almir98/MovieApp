@@ -15,8 +15,10 @@
     </div>
   </ng-container>
   
-  <button *ngIf="currentPage == 1" class="btn btn-primary btn-first" (click)="LoadActors()">Next page</button>
-  <button *ngIf="currentPage != 1" class="btn btn-primary btn-previous" (click)="LoadPrevActors()">Previous page</button>
-  <button *ngIf="currentPage != 1" class="btn btn-primary btn-next" (click)="LoadActors()">Next page</button>
+  <div class="buttons">
+    <button *ngIf="currentPage == 1" class="btn btn-primary btn-first" (click)="LoadActors()">Next page</button>
+    <button *ngIf="currentPage != 1" class="btn btn-primary btn-previous" (click)="LoadPrevActors()">Previous page</button>
+    <button *ngIf="currentPage != 1" class="btn btn-primary btn-next" (click)="LoadActors()">Next page</button>
+  </div>
   
 </main>

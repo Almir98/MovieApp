@@ -35,8 +35,10 @@
     </a>
   </ng-container>
 
-  <button *ngIf="currentPage == 1" class="btn btn-primary btn-first" (click)="LoadNewShows()">Next page</button>
-  <button *ngIf="currentPage != 1" class="btn btn-primary btn-previous" (click)="LoadPrevShows()">Previous page</button>
-  <button *ngIf="currentPage != 1" class="btn btn-primary btn-next" (click)="LoadNewShows()">Next page</button>
+  <div class="buttons">
+    <button *ngIf="currentPage == 1" class="btn btn-primary btn-first" (click)="LoadNewShows()">Next page</button>
+    <button *ngIf="currentPage != 1" class="btn btn-primary btn-previous" (click)="LoadPrevShows()">Previous page</button>
+    <button *ngIf="currentPage != 1" class="btn btn-primary btn-next" (click)="LoadNewShows()">Next page</button>
+  </div>
 
 </main>

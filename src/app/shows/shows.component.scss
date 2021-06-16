@@ -275,3 +275,27 @@ main {
       padding:8px 0px;
       margin: 20px 20px 20px 0px;
   }
+
+  @media (max-width: 768px) {
+
+    .btn-first{
+      margin: 20px 0px;
+      padding:8px 0px;
+      width: 150px;
+  }
+  
+  .btn-next{
+    display: inline-block;
+      width: 120px;
+      margin: 5px 0px;
+      padding:8px 0px;
+      display: block;
+  }
+  
+  .btn-previous{
+      display: inline-block;
+      width: 120px;
+      padding:8px 0px;
+      margin: 20px 20px 20px 0px;
+  }
+  }
